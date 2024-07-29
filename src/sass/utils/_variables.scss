@@ -1,0 +1,23 @@
+/* Colors */
+$black-color: #202025;
+$grapefruit-color: #fd5103;
+$orange-color: #fe7031;
+$gray-color: #5f6775;
+$white-color: #fcfcfc;
+$gray-color-dark-mode: #bdbdbd;
+
+/* Sizes */
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;
+
+/* Texts */
+
+/* Animations */
+$animation-duration: 250ms;
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+/* Loaders */
+$loader-type1-width: 10%;
+$loader-type1-height: 27%;
+$loader-type1-color: $grapefruit-color;

@@ -1,0 +1,77 @@
+.select-letter {
+  & .custom-select {
+    &-opener {
+      border: 1px solid $grapefruit-color;
+      border-radius: 4px;
+      font-size: 16px;
+      line-height: 1.35;
+      background-color: rgb(0 0 0 / 0);
+      font-weight: 700;
+      color: $grapefruit-color;
+      padding: 6px 30px 6px 10px;
+      position: relative;
+      width: 93px;
+      height: 34px;
+
+      &:focus {
+        background-color: $grapefruit-color;
+        color: #fff;
+
+        &::after {
+          background: url('../images/icon-arrow-down-white.svg') no-repeat
+            center;
+          background-size: 13px 8px;
+        }
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        background: url('../images/icon-arrow-down.svg') no-repeat center;
+        background-size: 13px 8px;
+        width: 13px;
+        height: 8px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+      }
+    }
+
+    &-panel {
+      border-radius: 4px;
+      background-color: #fff;
+      box-shadow: inset 0px 0px 0px 1px $grapefruit-color;
+      overflow: hidden;
+      width: 93px;
+
+      body.dark-mode & {
+        background-color: $black-color;
+      }
+    }
+
+    &-option {
+      padding: 6px 10px;
+      color: $gray-color;
+      font-size: 10px;
+      line-height: 1.5;
+      font-family: 700px;
+      text-transform: uppercase;
+
+      &.is-selected::before {
+        display: none;
+        background-color: rgb(0 0 0 / 0);
+      }
+      &.is-selected {
+        background-color: rgb(0 0 0 / 0.1);
+
+        body.dark-mode & {
+          background-color: rgb(255 255 255 / 0.05);
+        }
+      }
+      &.has-focus {
+        background-color: rgb(0 0 0 / 0.05);
+      }
+    }
+  }
+}

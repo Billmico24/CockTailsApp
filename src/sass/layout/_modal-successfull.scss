@@ -1,0 +1,49 @@
+.modal-successfull {
+  &__window {
+    width: 550px;
+  }
+
+  &__inner {
+    padding: 28px 28px 28px 28px;
+  }
+
+  &__content {
+    width: 100%;
+    font-size: 20px;
+    display: block;
+    padding: 40px;
+    min-height: auto;
+    line-height: 1.8;
+
+    & strong {
+      color: $grapefruit-color;
+      font-size: 26px;
+    }
+
+    body.dark-mode & {
+      color: $white-color;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: $black-color;
+
+    @include for-size(tablet) {
+      margin-bottom: 28px;
+    }
+
+    @include for-size(desktop) {
+    }
+
+    body.dark-mode & {
+      color: $white-color;
+    }
+  }
+}

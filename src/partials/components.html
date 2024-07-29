@@ -1,0 +1,100 @@
+<section
+  class="container"
+  style="
+    border: 1px dashed #ccc;
+    border-radius: 10px;
+    padding-block: 30px;
+    margin-top: 50px;
+    background-image: repeating-linear-gradient(
+      135deg,
+      rgb(0 0 0 / 0.05),
+      rgb(0 0 0 / 0.05) 5px,
+      rgb(255 255 255 / 0.05) 5px,
+      rgb(255 255 255 / 0.05) 10px
+    );
+  "
+>
+  <h2
+    style="
+      margin-bottom: 30px;
+      font-family: Roboto;
+      font-size: 22px;
+      font-weight: 300;
+      color: #777;
+    "
+  >
+    Temporary section for components
+  </h2>
+
+  <div style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap">
+    <button class="button-more" type="button">Learn More</button>
+    <button class="button-favorite" type="button">
+      Learn More
+      <svg class="button-favorite__icon">
+        <use href="./images/icons.svg#icon-heart"></use>
+      </svg>
+    </button>
+
+    <button
+      type="button"
+      class="toggler"
+      onclick="
+        const t = document.querySelector('.toggler');
+        t.classList.toggle('active');
+        document.body.classList.toggle('dark-mode');
+      "
+    ></button>
+
+    <button class="button-more" type="button" data-modal-open>Add to favorite</button>
+
+    <a
+      style="cursor: pointer; color: #777"
+      data-cocktailid="11007"
+      data-modal-cocktail-open
+    >
+      Cocktail
+    </a>
+
+    <input
+      placeholder="ingrName"
+      style="width: 90px"
+      data-ingredientname=""
+    />
+
+    <a
+      style="cursor: pointer; color: #777"
+      data-modal-ingredient-open
+    >
+      ✶ 1 ounce Campari
+    </a>
+
+    <div class="select-letter">
+      <select
+        class="custom-select"
+        onchange="
+          const cs = document.querySelector('.custom-select');
+          console.log(cs.value);
+        "
+      >
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+        <option value="d">D</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+        <option value="d">D</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+        <option value="d">D</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+      </select>
+    </div>
+  </div>
+</section>

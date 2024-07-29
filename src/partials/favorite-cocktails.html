@@ -1,0 +1,38 @@
+<section class="gallery">
+  <div class="container">
+    <h1 class="gallery-title gallery-title_margin" id="cards">
+      Favorite cocktails
+    </h1>
+    <ul class="gallery-list"></ul>
+    <div id="tui-pagination-container" class="tui-pagination"></div>
+    <div class="error-section visually-hidden" data-error-section>
+      <div class="error-section__title">There is no favorite cocktails yet</div>
+
+      <picture class="error-section__picture">
+        <source
+          srcset="./images/error-photo-mobile.png"
+          type="image/png"
+          media="(max-width: 767px)"
+        />
+
+        <source
+          srcset="./images/error-photo-tablet.png"
+          type="image/png"
+          media="(min-width: 768px) and (max-width: 1199px)"
+        />
+
+        <source
+          srcset="./images/error-photo-tablet.png"
+          type="image/png"
+          media="(min-width: 1200px)"
+        />
+
+        <img
+          class="error-png error-png_margin"
+          src="./images/error-photo-mobile.png"
+          alt="error image"
+        />
+      </picture>
+    </div>
+  </div>
+</section>

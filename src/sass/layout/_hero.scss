@@ -1,0 +1,206 @@
+.hero-section {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  @include for-size(tablet) {
+    padding-top: 64px;
+    padding-bottom: 60px;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 37px;
+    padding-bottom: 60px;
+  }
+}
+
+// mobile styles
+
+.mobile-caption {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.9em;
+  color: $grapefruit-color;
+  margin: 0;
+
+  @include for-size(tablet) {
+    display: none;
+  }
+}
+
+.hero-img-mobile {
+  margin-top: 38px;
+  margin-right: 7px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  height: 367px;
+  width: 100%;
+  background-image: url(../images/hero_img/mobile2x.png);
+  background-size: cover;
+  margin-bottom: 28px;
+
+  @include for-size(tablet) {
+    display: none;
+  }
+}
+
+.info-mobile {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2em;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  margin-bottom: 20px;
+  transition: color $animation-duration $transition-timing-function;
+
+  body.dark-mode & {
+    color: $white-color;
+    opacity: 0.8;
+  }
+
+  @include for-size(tablet) {
+    display: none;
+  }
+}
+
+// from size-tablet styles
+.hero-container {
+  display: none;
+
+  @include for-size(tablet) {
+    display: flex;
+    gap: 32px;
+  }
+
+  @include for-size(desktop) {
+    gap: 67px;
+  }
+}
+
+.hero-textpart {
+  display: none;
+
+  @include for-size(tablet) {
+    display: block;
+    width: 352px;
+    padding-top: 64px;
+  }
+
+  @include for-size(desktop) {
+    width: 684px;
+  }
+}
+
+.hero-caption {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.6em;
+  color: $grapefruit-color;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @include for-size(desktop) {
+    font-size: 52px;
+    line-height: 1.54em;
+    margin-bottom: 36px;
+  }
+}
+
+.hero-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2em;
+  letter-spacing: 0.02em;
+  color: $black-color;
+  opacity: 0.8;
+  margin: 0;
+  margin-bottom: 40px;
+  transition: color $animation-duration $transition-timing-function;
+
+  @include for-size(desktop) {
+    font-size: 18px;
+    line-height: 1.55em;
+    margin-bottom: 47px;
+  }
+
+  body.dark-mode & {
+    color: $white-color;
+    opacity: 0.8;
+  }
+}
+
+.container-alphabet {
+  width: 324;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1px;
+
+  @include for-size(desktop) {
+    width: 532px;
+  }
+}
+
+.selector {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  width: 24px;
+  min-height: 25px;
+  color: $gray-color;
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  @include transition(color, text-shadow);
+
+  @include for-size(desktop) {
+    font-size: 24px;
+    line-height: 1.5em;
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $grapefruit-color;
+    text-shadow: 0px 4px 4px rgba(95, 103, 117, 0.25), -1px 0px 1px #000,
+      1px 0px 1px #000, 0px -1px 1px #000, 0px 1px 1px #000;
+  }
+}
+
+.img-fromtablet {
+  display: none;
+
+  @include for-size(tablet) {
+    display: block;
+    background-image: url(../images/hero_img/tablet2x.png);
+    margin-right: 0;
+    margin-bottom: 0px;
+    height: 465px;
+    width: 336px;
+    background-size: cover;
+  }
+
+  @include for-size(desktop) {
+    background-image: url(../images/hero_img/desktop2x.png);
+    height: 580px;
+    width: 501px;
+  }
+}
+
+.hero-letterselection {
+  width: 93px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include for-size(tablet) {
+    display: none;
+  }
+}

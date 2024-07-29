@@ -1,0 +1,178 @@
+.modal-cocktail {
+  &__window {
+    @include for-size(tablet) {
+      width: 760px;
+      padding: 0;
+    }
+
+    @include for-size(desktop) {
+      width: 822px;
+    }
+  }
+
+  &__inner {
+    padding: 40px 20px;
+
+    @include for-size(tablet) {
+      padding: 0;
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    color: $black-color;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.2;
+    text-transform: capitalize;
+
+    body.dark-mode & {
+      color: $white-color;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 1.6;
+    text-transform: uppercase;
+
+    body.dark-mode & {
+      color: $white-color;
+    }
+  }
+
+  &__text {
+    margin-bottom: 32px;
+
+    font-family: 'Poppins';
+    color: #5f6775;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+
+    body.dark-mode & {
+      color: $white-color;
+    }
+
+    @include for-size(tablet) {
+      display: none;
+    }
+  }
+
+  &__link {
+    color: $gray-color;
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+      color: $orange-color;
+    }
+
+    body.dark-mode & {
+      color: $gray-color-dark-mode;
+    }
+  }
+
+  &__img {
+    display: block;
+    border-radius: 4px;
+
+    @include for-size(tablet) {
+      width: 288px;
+      height: 320px;
+    }
+  }
+
+  &__smalltitle {
+    margin-bottom: 8px;
+
+    font-family: 'Poppins';
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+
+    body.dark-mode & {
+      color: $white-color;
+    }
+  }
+
+  &__list {
+    margin-bottom: 32px;
+
+    font-family: 'Poppins';
+    color: #5f6775;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+
+    body.dark-mode & {
+      color: $white-color;
+    }
+  }
+
+  &__card {
+    @include for-size(tablet) {
+      display: flex;
+    }
+  }
+
+  &__bigcard {
+    padding-top: 40px;
+
+    @include for-size(tablet) {
+      margin-left: 32px;
+    }
+  }
+
+  &__tabinstructions {
+    padding: 28px 179px 0 28px;
+  }
+
+  &-button-wrapper {
+    @include for-size(tablet) {
+      padding: 0 28px 28px 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.sub-ingredients {
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+
+  body.dark-mode & {
+    color: $white-color;
+  }
+}
+
+.hidden-in-mobile {
+  display: none;
+
+  @include for-size(tablet) {
+    display: inline-block;
+  }
+}
+
+.hidden-in-tablet {
+  @include for-size(tablet) {
+    display: none;
+  }
+}

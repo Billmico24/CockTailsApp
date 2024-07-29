@@ -1,0 +1,25 @@
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/variables';
+
+@import './components/buttons';
+@import './components/toggler';
+@import './components/custom-select';
+@import './components/modal';
+@import './components/loaders';
+
+@import './base/reset';
+@import './base/common';
+@import './base/container';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/main';
+@import './layout/footer';
+@import './layout/modal-cocktail';
+@import './layout/modal-ingredient';
+@import './layout/modal-authentication';
+@import './layout/modal-successfull';
+@import './layout/mobile-menu';
+@import './layout/favorite-ingredients';
+@import './layout/user';

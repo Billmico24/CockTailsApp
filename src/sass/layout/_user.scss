@@ -1,0 +1,54 @@
+.user {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+  position: relative;
+
+  body.dark-mode & {
+    color: $white-color;
+  }
+
+  &__status {
+    position: relative;
+    bottom: -30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__button {
+    margin-left: 10px;
+
+    &-big {
+      border-radius: 4px;
+      padding: 6px 20px;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+
+  &__email {
+    color: $grapefruit-color;
+    @include transition(opacity);
+  }
+}
+
+.not-athorized {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+  font-size: 16px;
+  flex-wrap: wrap;
+
+  @include for-size(tablet) {
+    font-size: 20px;
+  }
+
+  body.dark-mode & {
+    color: $white-color;
+  }
+}

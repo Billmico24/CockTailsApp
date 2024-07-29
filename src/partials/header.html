@@ -1,0 +1,61 @@
+<header class="header">
+  <div class="container">
+    <div class="header-wrapper">
+      <a href="/src/index.html" class="logo"
+        ><img
+          class="logo__img"
+          src="./images/coctail-logo-mob.svg"
+          alt="Logotype"
+      /></a>
+      <div class="nav-wrapper">
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item fav-menu">
+            Favorites
+            <div class="fav-desc">
+              <a class="fav-desc__coctails" href="./favorite-cocktails.html"
+                >Favorite coctails</a
+              >
+              <a class="fav-desc__ingr" href="./favorite-ingredients.html"
+                >Favorite ingredients</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="search-wrapper">
+        <form name="search-form" class="search-form">
+          <button type="submit" class="search-form__btn">
+            <svg class="search-form__icon" width="24" height="24">
+              <use href="/src/images/icons.svg#icon-search-icon"></use>
+            </svg>
+          </button>
+          <input
+            class="search-form__input"
+            type="search"
+            name="search"
+            placeholder="Search |"
+          />
+        </form>
+      </div>
+      <div class="theme-wrapper">
+        <span class="light-theme">Ligth</span>
+        <button
+          type="button"
+          class="toggler"
+          onclick="const t = document.querySelector('.toggler'); t.classList.toggle('active'); document.body.classList.toggle('dark-mode');"
+        ></button>
+        <span class="dark-theme">Dark</span>
+      </div>
+      <!-- Burger btn -->
+
+      <button type="button" class="nav-menu__btn" data-mob-menu-open>
+        <svg class="nav-menu__icon" width="30" height="16">
+          <use href="./images/icons.svg#icon-burger-logo"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>

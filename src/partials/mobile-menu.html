@@ -1,0 +1,69 @@
+<section class="mobile-menu-modal visually-hidden" data-modal-mob-menu>
+  <div class="container mob-menu-wrapper">
+    <div class="flex-wrapper-mob">
+      <a href="/src/index.html" class="logo-mob-menu"
+        ><img
+          class="logo-mob-menu__img"
+          src="./images/coctail-logo-mob.svg"
+          alt="Logotype"
+      /></a>
+      <div class="theme-wrapper-mob">
+        <span class="light-theme-mob">Ligth</span>
+        <button
+          type="button"
+          class="toggler toggler-mob"
+          onclick="const t = document.querySelector('.toggler-mob'); t.classList.toggle('active'); document.body.classList.toggle('dark-mode');"
+        ></button>
+        <span class="dark-theme-mob">Dark</span>
+      </div>
+      <button type="button" class="mob-menu-cls__btn" data-modal-mob-menu-cls>
+        <svg class="mob-menu-cls" width="18" height="18">
+          <use href="/src/images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <form name="search-form-mob" class="search-form-mob">
+      <button type="submit" class="search-form__btn-mob">
+        <svg class="search-form__icon-mob" width="24" height="24">
+          <use href="/src/images/icons.svg#icon-search-icon"></use>
+        </svg>
+      </button>
+      <input
+        class="search-form__input-mob"
+        type="search"
+        name="search-mob"
+        placeholder="Search |"
+      />
+    </form>
+
+    <div class="modal-nav">
+      <ul class="mob-nav">
+        <li class="mob-nav__item">
+          <a href="./index.html" class="mob-nav__link">Home</a>
+        </li>
+        <li class="mob-nav__item">
+          Favorites
+          <div class="fav-desc-mob">
+            <a
+              class="fav-desc-mob__coctails"
+              href="./favorite-cocktails.html"
+              data-fav
+              >Favorite coctails</a
+            >
+            <a
+              class="fav-desc-mob__ingr"
+              href="./favorite-ingredients.html"
+              data-fav
+              >Favorite ingredients</a
+            >
+          </div>
+          <button type="button" class="sub-menu-btn">
+            <svg class="mob-menu-fav-icon" width="24" height="24">
+              <use href="/src/images/icons.svg#icon-ep_arrow-up"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
